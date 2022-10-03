@@ -115,6 +115,7 @@ class AdminController extends Controller
         if(!$status == 'draft' || !$status == 'publish'){
             echo $status;
         }
+        // navveeed
         $product->update([
             'product_title'=> $request->product_title,
             'category_id'=> $request->category_id,
