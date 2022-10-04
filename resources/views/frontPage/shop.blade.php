@@ -1,5 +1,5 @@
 @extends('frontPage.masterFile.layout')
-@section('page-title', 'Shop')
+@section('page-title', 'Shop')  
 
 @section('content')
     <!-- product-details-start -->

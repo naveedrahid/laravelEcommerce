@@ -394,10 +394,15 @@
             @php
                  $url = URL::to('');
                  $current  = url()->current();
+                 $slid_img_url = App\Models\Slider::get();
+                 $imgs = [];
+                 foreach ($slid_img_url as $single_img) {
+                   $imgs = $single_img->slide_img;
+                 }
             @endphp
-            @if($url == $current || url('login'))
+            @if($url == $current && url('login'))
             @else
-            <section class="page__title p-relative d-flex align-items-center" data-background="assets/img/bg/page-title-1.jpg" style="background-image: url(&quot;assets/img/page-title/page-title-1.jpg&quot;);">
+            <section class="page__title p-relative d-flex align-items-center" style="background: url(<?php echo asset($imgs); ?>) no-repeat;">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-12">
@@ -406,7 +411,7 @@
                                     <div class="page__title-breadcrumb">
                                         <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb justify-content-center">
-                                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                                             <li class="breadcrumb-item active" aria-current="page">Shop</li>
                                         </ol>
                                         </nav>

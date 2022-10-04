@@ -7537,5 +7537,8 @@ p.checkout-coupon input[type=text]::placeholder {
   color: #bbbbbb;
   margin-left: 5px;
 }
-
+.page__title {
+  background-size: cover !important;
+  background-position: center center !important;
+}
 /*# sourceMappingURL=style.css.map */

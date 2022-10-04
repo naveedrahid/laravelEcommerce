@@ -1,27 +1,6 @@
 @extends('frontPage.masterFile.layout')
+@section('page-title', 'Product Detail')  
 @section('content')
-    <!-- page__title-start -->
-    <section class="page__title p-relative d-flex align-items-center" data-background="/assets/img/bg/page-title-1.jpg"
-             style="background-image: url(/assets/img/page-title/page-title-1.jpg&quot;);">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="page__title-inner text-center">
-                        <h1>Product Details</h1>
-                        <div class="page__title-breadcrumb">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Product Details</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- page__title-end -->
 
     <!-- product-details-start -->
     <section class="product-details pt-90 pb-50">

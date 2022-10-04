@@ -25,7 +25,7 @@
 
         <form action=" {{route('admin.order.update', $order->id)}}" method="POST" enctype="multipart/form-data">
             @csrf
-        @method('PUT')
+            @method('PUT')
             <div class="row">
                 <div class="col-md-6">
                     <p><strong>Order Date:</strong> {{ $order->created_at->toDateString() }}</p>
